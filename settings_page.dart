@@ -18,12 +18,9 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  // Sample settings unrelated to the app-wide dark mode state.
   bool notificationsEnabled = true;
   String language = 'English';
 
-  // The same three-item Bottom Navigation Bar used on Home, Profile, and
-  // Settings (Part 7, Step 7). Settings is selected here (Part 9, Step 6).
   Widget _buildBottomNav(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: 2,
@@ -61,8 +58,6 @@ class _SettingsPageState extends State<SettingsPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Dark Mode switch, connected to the app-wide state (Part 9,
-            // Steps 7-10).
             Card(
               child: SwitchListTile(
                 secondary: Icon(
@@ -89,6 +84,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 },
               ),
             ),
+            const SizedBox(height: 8),
             Card(
               child: ListTile(
                 leading: const Icon(Icons.language, color: _headerBlue),
@@ -103,6 +99,11 @@ class _SettingsPageState extends State<SettingsPage> {
                     DropdownMenuItem(value: 'Japanese', child: Text('Japanese')),
                     DropdownMenuItem(value: 'French', child: Text('French')),
                     DropdownMenuItem(value: 'Portuguese', child: Text('Portuguese')),
+                    DropdownMenuItem(value: 'Spanish', child: Text('Spanish')),
+                    DropdownMenuItem(value: 'German', child: Text('German')),
+                    DropdownMenuItem(value: 'Chinese', child: Text('Chinese')),
+                    DropdownMenuItem(value: 'Korean', child: Text('Korean')),
+                    DropdownMenuItem(value: 'Arabic', child: Text('Arabic')),
                   ],
                   onChanged: (value) {
                     if (value != null) setState(() => language = value);
@@ -110,6 +111,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
               ),
             ),
+            const SizedBox(height: 8),
             Card(
               child: ListTile(
                 leading: const Icon(Icons.info_outline, color: _headerBlue),
