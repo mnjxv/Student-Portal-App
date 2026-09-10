@@ -21,13 +21,13 @@ class AnnouncementsPage extends StatelessWidget {
         'icon': Icons.event,
         'title': 'Updated Schedule',
         'message':
-            'IT 306W, Thursdays 5:00 PM - 8:00 PM, moves from SDL2 to Prog Lab 3 starting October 1.',
+            'IT 101, Thursdays 5:00 PM - 8:00 PM, moves from SDL2 to Prog Lab 3 starting October 1.',
       },
       {
         'icon': Icons.celebration,
         'title': 'School Event',
         'message':
-            'CICT Congress is this Friday, 8:00 AM - 5:00 PM, at the Valenhia Hall. Attendance replaces your IT 304W & IT 306W class for that day.',
+            'CICT Congress is this Friday, 8:00 AM - 5:00 PM, at the Valencia Hall.',
       },
       {
         'icon': Icons.notifications_active,
