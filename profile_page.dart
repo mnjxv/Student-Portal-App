@@ -29,8 +29,6 @@ class ProfilePage extends StatelessWidget {
     );
   }
 
-  // The same three-item Bottom Navigation Bar used on Home, Profile, and
-  // Settings (Part 7, Step 7). Profile is selected here (Part 8, Step 6).
   Widget _buildBottomNav(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: 1,
@@ -77,7 +75,6 @@ class ProfilePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Student Profile section.
             Center(
               child: Column(
                 children: const [
@@ -96,7 +93,7 @@ class ProfilePage extends StatelessWidget {
                     'Specialization in Web & Application Development',
                     style: TextStyle(fontSize: 10),
                   ),
-                  Text('3rd Year - Section 3IG2'),
+                  Text('4th Year - Section 4A'),
                 ],
               ),
             ),
@@ -116,10 +113,10 @@ class ProfilePage extends StatelessWidget {
                 ],
               ),
             ),
-            _infoTile(Icons.grade, 'Year Level', '3rd Year'),
-            _infoTile(Icons.groups, 'Section', '3IG2'),
-            _infoTile(Icons.email, 'Email', '2024100561@ms.bulsu.edu.ph'),
-            _infoTile(Icons.school, 'School', 'Bulacan State University'),
+            _infoTile(Icons.grade, 'Year Level', '4th Year'),
+            _infoTile(Icons.groups, 'Section', '4A'),
+            _infoTile(Icons.email, 'Email', 'student@gmail'),
+            _infoTile(Icons.school, 'School', 'Sample State University'),
           ],
         ),
       ),
