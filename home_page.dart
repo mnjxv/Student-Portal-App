@@ -35,8 +35,6 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  // The same three-item Bottom Navigation Bar used on Home, Profile, and
-  // Settings (Part 7, Step 7). Home is selected here (Part 7, Step 4).
   Widget _buildBottomNav(BuildContext context) {
     return BottomNavigationBar(
       currentIndex: 0,
@@ -83,7 +81,6 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Student Profile card.
             Card(
               clipBehavior: Clip.antiAlias,
               shape: RoundedRectangleBorder(
@@ -111,7 +108,7 @@ class HomePage extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Aryana Rizanne N. Maranan',
+                            'Juan Dela Cruz',
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
@@ -128,7 +125,7 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(color: Colors.white, fontSize: 10),
                           ),
                           Text(
-                            '3rd Year - Section 3IG2',
+                            '4th Year - Section 4A',
                             style: TextStyle(color: Colors.white),
                           ),
                         ],
@@ -140,7 +137,6 @@ class HomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
-            // Quick Access heading.
             const Text(
               'Quick Access',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
