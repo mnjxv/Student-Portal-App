@@ -30,7 +30,7 @@ class AppDrawer extends StatelessWidget {
                 ),
                 SizedBox(height: 10),
                 Text(
-                  'Aryana Rizanne N. Maranan',
+                  'Juan Dela Cruz',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
